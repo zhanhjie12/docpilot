@@ -1,0 +1,74 @@
+{
+  "source_set": "zh_procurement_pilot_v1",
+  "acquired_date": "2026-11-18",
+  "candidates": [
+    {
+      "id": "cn_proc_001",
+      "source_url": "https://www.ccgp-neimenggu.gov.cn/gpx-bid-file/2022/9/7/402881cc82f474c501831591317e5ebd.pdf?accessCode=f9a44de35261511b9b24e9c9c6d35af1",
+      "project_id_hint": "NMGZCS-G-H-220256-2",
+      "category": "货物采购"
+    },
+    {
+      "id": "cn_proc_002",
+      "source_url": "https://www.ccgp-neimenggu.gov.cn/ecms-econtract/contract/signing/2025/3/28/e8b4e1870c3c48a79d1316cba7dbd4ba037762ff67be47aab17c0778a1c33e4d.pdf",
+      "project_id_hint": "150101-HSZC-XJ-20250004",
+      "category": "园林机械采购"
+    },
+    {
+      "id": "cn_proc_003",
+      "source_url": "https://www.ccgp-neimenggu.gov.cn/ecms-econtract/contract/upload/file/2026/2/26/97eff3ce-d1fe-40c4-a49c-09723a42325a_2025%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E6%9C%8D%E5%8A%A1%E5%90%88%E5%90%8C%281%29_20260226163141.pdf",
+      "project_id_hint": "152203-XAMZY-CS-20260002",
+      "category": "信息技术服务"
+    },
+    {
+      "id": "cn_proc_004",
+      "source_url": "https://www.ccgp-neimenggu.gov.cn/ecms-econtract/contract/upload/file/2025/12/26/2d817cef-e9a4-4af3-a48c-cd1c7d4785c4_156.%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%93%E7%BA%BF%E6%9C%8D%E5%8A%A1%E5%90%88%E5%90%8C.pdf",
+      "project_id_hint": "ESZC-J-F-250269",
+      "category": "网络通信服务"
+    },
+    {
+      "id": "cn_proc_005",
+      "source_url": "https://www.ccgp-neimenggu.gov.cn/ecms-econtract/contract/signing/2025/7/10/4663c46f37504750a8d128c13d80cec5dc6572ffb65a4a67a8c272f99cb8dfcc.pdf",
+      "project_id_hint": "ESZCDQS-X-H-250078.1B1",
+      "category": "设备采购"
+    },
+    {
+      "id": "cn_proc_006",
+      "source_url": "https://www.ccgp-neimenggu.gov.cn/ecms-econtract/contract/signing/2025/6/10/f191c0ad6a904bb6888a3ccb24497d64202f6158f00244de8f7273b40e1a0e6e.pdf",
+      "project_id_hint": "KLQZCS-G-H-250023",
+      "category": "设备采购"
+    },
+    {
+      "id": "cn_proc_007",
+      "source_url": "https://obs.gcy.zfcg.gxzf.gov.cn/guangxi-gov-open-doc/1035IC/5c1afde2-1020-4dd3-b7b9-fa2da81d6374.pdf",
+      "project_id_hint": "LZZC2025-G3-050058-GXZF",
+      "category": "市政服务"
+    },
+    {
+      "id": "cn_proc_008",
+      "source_url": "https://obs.gcy.zfcg.gxzf.gov.cn/guangxi-gov-open-doc/1035IC/3f60619f-9e96-4407-b35b-967779cdb2ad.pdf",
+      "project_id_hint": "HZZC2025-J1-210092-ZXGC",
+      "category": "水产设备采购"
+    },
+    {
+      "id": "cn_proc_009",
+      "source_url": "https://obs.gcy.zfcg.gxzf.gov.cn/guangxi-gov-open-doc/1035IC/5b6fed06-f28e-47ed-807b-23cc55880c1c.pdf",
+      "project_id_hint": "GLZC2025-G3-030002-ZHLX",
+      "category": "市政维护服务"
+    },
+    {
+      "id": "cn_proc_010",
+      "source_url": "https://obs.gcy.zfcg.gxzf.gov.cn/guangxi-gov-open-doc/1035IC/754d9cc6-fdd6-43fc-93e3-1d0b1964d109.pdf",
+      "project_id_hint": "LZZC2025-G1-990935-GXZX",
+      "category": "法庭设备采购"
+    }
+  ],
+  "paired_tenders": [
+    {
+      "id": "cn_tender_001",
+      "project_id": "NMGZCS-G-H-220256-2",
+      "contract_id": "cn_proc_001",
+      "source_url": "https://www.ccgp-neimenggu.gov.cn/gpx-bid-file/150001/gpx-tender/2022/8/10/402881dd8254242f018286e0d8ef139d.pdf?accessCode=8b71be225be0a38ff51eca4d283f08c8"
+    }
+  ]
+}

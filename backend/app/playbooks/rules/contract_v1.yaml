@@ -1,0 +1,41 @@
+# Thresholds are demonstration policy values and require organization approval.
+playbook_id: supplier_contract
+version: "1.0.0"
+rules:
+  - rule_id: explicit_high_risk
+    predicate: explicit_high_risk
+    field: risk
+    severity: high
+    title: 合同包含明确高风险标记
+    explanation: 原文明确出现高风险、重大违约或无限责任表述。
+    recommendation: 由法务核对责任范围与例外，再做签署决定。
+  - rule_id: payment_days_gt_60
+    predicate: payment_days_gt
+    field: payment_days
+    threshold_days: 60
+    severity: medium
+    title: 付款期限超过示例审阅阈值
+    explanation: 有原文支持的付款期限超过本 Playbook 的 60 天示例阈值。
+    recommendation: 核对付款起算点、天数口径和已批准的内部政策。
+  - rule_id: auto_renewal_short_notice
+    predicate: auto_renewal_short_notice
+    field: renewal
+    threshold_days: 30
+    severity: medium
+    title: 自动续约通知期较短
+    explanation: 自动续约和短于 30 天的提前通知要求同时出现于原文。
+    recommendation: 核对通知期限和终止操作流程。
+  - rule_id: unlimited_liability
+    predicate: unlimited_liability
+    field: liability_cap
+    severity: high
+    title: 原文约定无限责任
+    explanation: 引用条款明确包含无限责任或不设责任上限的表述。
+    recommendation: 由法务核对适用范围、例外和可谈判的责任上限。
+  - rule_id: counterparty_venue
+    predicate: counterparty_venue
+    field: dispute_resolution
+    severity: medium
+    title: 争议由对方所在地法院管辖
+    explanation: 引用条款将争议交由对方所在地法院处理。
+    recommendation: 核对合同主体、我方角色和内部争议解决政策。

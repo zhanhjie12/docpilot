@@ -1,0 +1,1688 @@
+{
+  "dataset": "acord_v1",
+  "split": "test",
+  "corpus_count": 3931,
+  "test_query_count": 57,
+  "query_limit": null,
+  "relevance_threshold": 2,
+  "top_k": [
+    5,
+    10
+  ],
+  "candidate_limit": 40,
+  "vector_min_score": null,
+  "embedding_model": null,
+  "index_embedding_seconds": null,
+  "scope": "in-memory retriever primitives; no FastAPI or SQLite indexing",
+  "modes": {
+    "lexical": {
+      "summary": {
+        "query_count": 57,
+        "recall_at_5": 0.019138755980861243,
+        "recall_at_10": 0.027978162188688503,
+        "hit_rate_at_5": 0.14035087719298245,
+        "mrr_at_10": 0.09378306878306879,
+        "ndcg_at_10": 0.03991084367784349,
+        "judged_fraction_at_10": 0.18771929824561404,
+        "empty_results": 0,
+        "latency_ms_p50": 26.571299880743027,
+        "latency_ms_p95": 64.79592006653546
+      },
+      "per_query": [
+        {
+          "query_id": "England Governing Law",
+          "top_ids": [
+            "d8a9bc7f11",
+            "cc219e9cfe",
+            "3f81e41ee3",
+            "ccd2a4a15c",
+            "797c21c800",
+            "62d86b8801",
+            "5381bfa4bd",
+            "3cab4c15d9",
+            "333d0ec86b",
+            "096130d283"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.018729369608471193,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.1,
+            "hit_rate": 1.0,
+            "mrr": 0.125,
+            "ndcg": 0.07116323174258544,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "Clause with multiple governing laws",
+          "top_ids": [
+            "e3bcbd0dd0",
+            "e45fa60f05",
+            "a8149da993",
+            "70ef3189ed",
+            "e6c3dec892",
+            "6468fc52f8",
+            "47371f5b5f",
+            "d0e8bf4b5e",
+            "2b786a17c4",
+            "98bcbc4090"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "Renewal clause that requires notice to Renew",
+          "top_ids": [
+            "f5b72117b0",
+            "0289a7a2d3",
+            "68971474a5",
+            "4805eab4ac",
+            "70ef3189ed",
+            "e6c3dec892",
+            "303feb11a2",
+            "a891976062",
+            "349c42d66c",
+            "be5b4036fb"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "No-Solicit of Customers",
+          "top_ids": [
+            "70ef3189ed",
+            "68971474a5",
+            "0289a7a2d3",
+            "349c42d66c",
+            "4805eab4ac",
+            "a891976062",
+            "304cb57e07",
+            "2b786a17c4",
+            "98bcbc4090",
+            "a8149da993"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "No-Solicit Of Employees not bound by time or longer than 12 months",
+          "top_ids": [
+            "a891976062",
+            "70ef3189ed",
+            "349c42d66c",
+            "68971474a5",
+            "f5b72117b0",
+            "2b786a17c4",
+            "98bcbc4090",
+            "0289a7a2d3",
+            "4805eab4ac",
+            "e6c3dec892"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "Rofr/Rofo/Rofn",
+          "top_ids": [
+            "68971474a5",
+            "d90ac097df",
+            "d12bc7e9b9",
+            "4b2b3a1140",
+            "c09164e398"
+          ],
+          "at_5": {
+            "recall": 0.08333333333333333,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.21398626473452756,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.08333333333333333,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.1644922274565801,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "Change Of Control",
+          "top_ids": [
+            "52ebd37305",
+            "70ef3189ed",
+            "f5b72117b0",
+            "cb0ba32d15",
+            "68971474a5",
+            "f6e6ca32d8",
+            "349c42d66c",
+            "68e7f6b3b2",
+            "e4420a70fe",
+            "2710bc1c9e"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "Revenue/Profit Sharing",
+          "top_ids": [
+            "1c1593cc06",
+            "8090107c01",
+            "4368828d9c",
+            "c2e03f0a3e",
+            "af7adae8e2",
+            "7961bdfcce",
+            "6341c7e32d",
+            "6bf28f90ee",
+            "15ebbd8f92",
+            "2e4221f939"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.08333333333333333,
+            "hit_rate": 1.0,
+            "mrr": 0.1111111111111111,
+            "ndcg": 0.06875374781295601,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "Minimum Commitment",
+          "top_ids": [
+            "5eb9c1e531",
+            "be94fc05a6",
+            "5bc2fa7ed6",
+            "126bb06b0f",
+            "52d2b7cfbb",
+            "e8e8dc9a2f",
+            "388e358881",
+            "122895321e",
+            "ea9a799071",
+            "d91c9c4c8b"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          }
+        },
+        {
+          "query_id": "IP Ownership Assignment or Transfer",
+          "top_ids": [
+            "a891976062",
+            "049d50767e",
+            "f5b72117b0",
+            "50aeae83f6",
+            "c9c0423ff1",
+            "0b74e4cd6a",
+            "9c99d33889",
+            "be5b4036fb",
+            "e8d22294b1",
+            "70ef3189ed"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "Joint IP Ownership",
+          "top_ids": [
+            "0289a7a2d3",
+            "3e357f4fc3",
+            "275d00ff98",
+            "77723c2439",
+            "737c81374a",
+            "c12e7c6f08",
+            "d0e8bf4b5e",
+            "7c3277a539",
+            "9cbae6d58a",
+            "0f52d56abe"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          }
+        },
+        {
+          "query_id": "License clause covering affiliates of licensor and/or licensee",
+          "top_ids": [
+            "304cb57e07",
+            "70ef3189ed",
+            "c878e0dc51",
+            "f5b72117b0",
+            "1fb5630b2d",
+            "600551b417",
+            "e3bcbd0dd0",
+            "e45fa60f05",
+            "a891976062",
+            "0a05d86d5d"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "Audit Rights",
+          "top_ids": [
+            "21d04a5f8b",
+            "3f015aaebb",
+            "a50ec6c84e",
+            "023c043b97",
+            "84c187e8f2",
+            "1609fb5c8c",
+            "5e7d660d1f",
+            "f6e6ca32d8",
+            "81a629331d",
+            "95ff1bd949"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          }
+        },
+        {
+          "query_id": "Liquidated Damages",
+          "top_ids": [
+            "b992ff50d0",
+            "486c92ee4f",
+            "6487e69608",
+            "83b44a94b3",
+            "e9bb33ad41",
+            "9801ca2b34",
+            "1da2b586cc",
+            "e7eebca907",
+            "78643f2042",
+            "43fb36467e"
+          ],
+          "at_5": {
+            "recall": 0.1,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.21398626473452756,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.1,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.1644922274565801,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "Third Party Beneficiary",
+          "top_ids": [
+            "a8149da993",
+            "44dbf809a1",
+            "ecb2346e86",
+            "6468fc52f8",
+            "47371f5b5f",
+            "433bb528fe",
+            "a891976062",
+            "b72133df2a",
+            "97533fb357",
+            "a130456abf"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.5
+          }
+        },
+        {
+          "query_id": "precedents for insurance coverage influencing limitation of liability",
+          "top_ids": [
+            "c708257250",
+            "b37e45b120",
+            "d9e3479470",
+            "ccaeb38192",
+            "fc0c7dfe18",
+            "a8149da993",
+            "c327264e38",
+            "7869371fc8",
+            "70ef3189ed",
+            "439597df3c"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "Fix fee liability cap",
+          "top_ids": [
+            "c708257250",
+            "c327264e38",
+            "ccaeb38192",
+            "0f2ab09952",
+            "be5b4036fb",
+            "f549c75c3c",
+            "b37e45b120",
+            "ab5fe85879",
+            "27da0418e8",
+            "32762b4bf5"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.08333333333333333,
+            "hit_rate": 1.0,
+            "mrr": 0.16666666666666666,
+            "ndcg": 0.05868050054492484,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "Cap on liability equals 12 months payment",
+          "top_ids": [
+            "f5b72117b0",
+            "2b786a17c4",
+            "98bcbc4090",
+            "b510e1de51",
+            "1617a86923",
+            "70ef3189ed",
+            "9c99d33889",
+            "a891976062",
+            "6468fc52f8",
+            "47371f5b5f"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "unilateral liability cap",
+          "top_ids": [
+            "c708257250",
+            "c327264e38",
+            "0f2ab09952",
+            "ccaeb38192",
+            "b37e45b120",
+            "be5b4036fb",
+            "f549c75c3c",
+            "ab5fe85879",
+            "27da0418e8",
+            "48d717f77a"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.015045922166320265,
+            "judged_fraction": 0.4
+          }
+        },
+        {
+          "query_id": "mutual liability cap",
+          "top_ids": [
+            "c708257250",
+            "c327264e38",
+            "0f2ab09952",
+            "ccaeb38192",
+            "b37e45b120",
+            "be5b4036fb",
+            "f549c75c3c",
+            "ab5fe85879",
+            "27da0418e8",
+            "48d717f77a"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.07692307692307693,
+            "hit_rate": 1.0,
+            "mrr": 0.14285714285714285,
+            "ndcg": 0.07336392209936007,
+            "judged_fraction": 0.4
+          }
+        },
+        {
+          "query_id": "two parties having different liability caps and/or carveouts",
+          "top_ids": [
+            "a891976062",
+            "c708257250",
+            "e6c3dec892",
+            "f5b72117b0",
+            "be5b4036fb",
+            "c9c0423ff1",
+            "2b786a17c4",
+            "98bcbc4090",
+            "21d04a5f8b",
+            "9d47cd2626"
+          ],
+          "at_5": {
+            "recall": 0.16666666666666666,
+            "hit_rate": 1.0,
+            "mrr": 0.2,
+            "ndcg": 0.17225790596551208,
+            "judged_fraction": 0.6
+          },
+          "at_10": {
+            "recall": 0.16666666666666666,
+            "hit_rate": 1.0,
+            "mrr": 0.2,
+            "ndcg": 0.15507610712425896,
+            "judged_fraction": 0.4
+          }
+        },
+        {
+          "query_id": "indemnification carveout to cap on liability",
+          "top_ids": [
+            "2b786a17c4",
+            "98bcbc4090",
+            "f5b72117b0",
+            "70ef3189ed",
+            "349c42d66c",
+            "a891976062",
+            "6468fc52f8",
+            "47371f5b5f",
+            "be5b4036fb",
+            "b510e1de51"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "third party IP infringement exception to cap on liability",
+          "top_ids": [
+            "a8149da993",
+            "2b786a17c4",
+            "98bcbc4090",
+            "44dbf809a1",
+            "6468fc52f8",
+            "47371f5b5f",
+            "a891976062",
+            "f5b72117b0",
+            "ecb2346e86",
+            "49f7b5c960"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "liability cap clauses that exclude third party IP infringement and fraud, gross negligence or willful misconduct",
+          "top_ids": [
+            "a8149da993",
+            "a891976062",
+            "49f7b5c960",
+            "871153bba0",
+            "f88433de6e",
+            "2b373eb6f9",
+            "44dbf809a1",
+            "ecb2346e86",
+            "be5b4036fb",
+            "f6e6ca32d8"
+          ],
+          "at_5": {
+            "recall": 0.2,
+            "hit_rate": 1.0,
+            "mrr": 0.25,
+            "ndcg": 0.17356895500680403,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.2,
+            "hit_rate": 1.0,
+            "mrr": 0.25,
+            "ndcg": 0.15896987210532892,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "personal or bodily injury exception to liability cap",
+          "top_ids": [
+            "f5b72117b0",
+            "be5b4036fb",
+            "a891976062",
+            "c708257250",
+            "c9c0423ff1",
+            "2b786a17c4",
+            "98bcbc4090",
+            "0b74e4cd6a",
+            "9c99d33889",
+            "f549c75c3c"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.010444372206201117,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "confidentiality exceptions to liability cap",
+          "top_ids": [
+            "f5b72117b0",
+            "be5b4036fb",
+            "c708257250",
+            "f549c75c3c",
+            "2b786a17c4",
+            "98bcbc4090",
+            "70ef3189ed",
+            "49f7b5c960",
+            "c327264e38",
+            "0f2ab09952"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "seller-favorable cap on liability clauses",
+          "top_ids": [
+            "2b786a17c4",
+            "98bcbc4090",
+            "9c99d33889",
+            "a891976062",
+            "b510e1de51",
+            "1617a86923",
+            "6468fc52f8",
+            "47371f5b5f",
+            "e3bcbd0dd0",
+            "e45fa60f05"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "non-reliance clause",
+          "top_ids": [
+            "e3bcbd0dd0",
+            "e45fa60f05",
+            "b510e1de51",
+            "1617a86923",
+            "15a06098ba",
+            "d8f501575b",
+            "f6a83ce822",
+            "e27890b9d3",
+            "07e23d1022",
+            "6a99cae9d3"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "\"as-is\" clause",
+          "top_ids": [
+            "f5b72117b0",
+            "6468fc52f8",
+            "47371f5b5f",
+            "2b786a17c4",
+            "98bcbc4090",
+            "cc52adc64b",
+            "4805eab4ac",
+            "a891976062",
+            "e3bcbd0dd0",
+            "e45fa60f05"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "warranty disclaimer clause that includes implied warranties",
+          "top_ids": [
+            "f5b72117b0",
+            "d91c9c4c8b",
+            "62b5a27217",
+            "837270a74e",
+            "be5b4036fb",
+            "a9694c6b97",
+            "8fd6afd44b",
+            "a891976062",
+            "bda0c85a9f",
+            "f6e6ca32d8"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "warranty disclaimer that does not specifically waive title and non-infringement warranties",
+          "top_ids": [
+            "f5b72117b0",
+            "304cb57e07",
+            "e6c3dec892",
+            "0289a7a2d3",
+            "a891976062",
+            "a8149da993",
+            "e3bcbd0dd0",
+            "e45fa60f05",
+            "4805eab4ac",
+            "f6e6ca32d8"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.6
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.4
+          }
+        },
+        {
+          "query_id": "customer's right for defective products",
+          "top_ids": [
+            "b510e1de51",
+            "1617a86923",
+            "871153bba0",
+            "f88433de6e",
+            "2b373eb6f9",
+            "49f7b5c960",
+            "c878e0dc51",
+            "0a05d86d5d",
+            "06a3a6a6ed",
+            "431ff9409a"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "buyer-favorable warranty disclaimer clauses",
+          "top_ids": [
+            "d91c9c4c8b",
+            "1214845ad4",
+            "103dfd2d27",
+            "ab5fe85879",
+            "62b5a27217",
+            "bda0c85a9f",
+            "8fd6afd44b",
+            "433bb528fe",
+            "6e5838feef",
+            "de23a5e4e2"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.4
+          }
+        },
+        {
+          "query_id": "indemnity or indemnification clause",
+          "top_ids": [
+            "a891976062",
+            "c9c0423ff1",
+            "349c42d66c",
+            "0b74e4cd6a",
+            "be5b4036fb",
+            "9c99d33889",
+            "2b786a17c4",
+            "98bcbc4090",
+            "21d04a5f8b",
+            "4ea8455741"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "mutual indemnification provisions",
+          "top_ids": [
+            "349c42d66c",
+            "b72133df2a",
+            "a130456abf",
+            "9d47cd2626",
+            "d68f50740e",
+            "be858d7a31",
+            "9b07dc6a42",
+            "a8149da993",
+            "4ea8455741",
+            "360c6e8d3e"
+          ],
+          "at_5": {
+            "recall": 0.09090909090909091,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.2444201171521157,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.09090909090909091,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.20086461750946344,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "unilateral indemnification clause",
+          "top_ids": [
+            "b72133df2a",
+            "a130456abf",
+            "349c42d66c",
+            "d68f50740e",
+            "be858d7a31",
+            "9b07dc6a42",
+            "8dd8ee0429",
+            "557319cc6b",
+            "9d47cd2626",
+            "a8149da993"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.04509263606850207,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.03660548005537749,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "fraud and/or gross negligence indemnity",
+          "top_ids": [
+            "a891976062",
+            "f5b72117b0",
+            "21d04a5f8b",
+            "c9c0423ff1",
+            "e6c3dec892",
+            "be5b4036fb",
+            "0b74e4cd6a",
+            "871153bba0",
+            "f88433de6e",
+            "2b373eb6f9"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.6
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "IP infringement indemnity that covers trademark or copyright",
+          "top_ids": [
+            "a891976062",
+            "f5b72117b0",
+            "c9c0423ff1",
+            "0b74e4cd6a",
+            "be5b4036fb",
+            "f6e6ca32d8",
+            "9c99d33889",
+            "21d04a5f8b",
+            "e3bcbd0dd0",
+            "e45fa60f05"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.3
+          }
+        },
+        {
+          "query_id": "Indemnification of first party claims",
+          "top_ids": [
+            "a8149da993",
+            "349c42d66c",
+            "44dbf809a1",
+            "a891976062",
+            "2b786a17c4",
+            "98bcbc4090",
+            "ecb2346e86",
+            "6468fc52f8",
+            "47371f5b5f",
+            "b72133df2a"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          }
+        },
+        {
+          "query_id": "indemnification clauses that include defending claims",
+          "top_ids": [
+            "f5b72117b0",
+            "349c42d66c",
+            "a891976062",
+            "a8149da993",
+            "b72133df2a",
+            "a130456abf",
+            "8dd8ee0429",
+            "557319cc6b",
+            "d68f50740e",
+            "2b786a17c4"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "indemnification clause that allows indemnifying party to control defenses",
+          "top_ids": [
+            "a8149da993",
+            "44dbf809a1",
+            "6468fc52f8",
+            "47371f5b5f",
+            "2b786a17c4",
+            "98bcbc4090",
+            "ecb2346e86",
+            "349c42d66c",
+            "f5b72117b0",
+            "b9a85d9892"
+          ],
+          "at_5": {
+            "recall": 0.16666666666666666,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.5912284888786848,
+            "judged_fraction": 0.6
+          },
+          "at_10": {
+            "recall": 0.25,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.5631782054990175,
+            "judged_fraction": 0.6
+          }
+        },
+        {
+          "query_id": "Indemnity of broad-based claims",
+          "top_ids": [
+            "70ef3189ed",
+            "349c42d66c",
+            "a891976062",
+            "2b786a17c4",
+            "98bcbc4090",
+            "cb0ba32d15",
+            "68971474a5",
+            "6468fc52f8",
+            "47371f5b5f",
+            "a8149da993"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          }
+        },
+        {
+          "query_id": "Indemnified party includes affiliates",
+          "top_ids": [
+            "a8149da993",
+            "a891976062",
+            "44dbf809a1",
+            "6468fc52f8",
+            "47371f5b5f",
+            "ecb2346e86",
+            "433bb528fe",
+            "2b786a17c4",
+            "98bcbc4090",
+            "b9a85d9892"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.07692307692307693,
+            "hit_rate": 1.0,
+            "mrr": 0.1,
+            "ndcg": 0.05083426922500489,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "indemnification of broad-based third party claims",
+          "top_ids": [
+            "a8149da993",
+            "44dbf809a1",
+            "349c42d66c",
+            "2b786a17c4",
+            "98bcbc4090",
+            "ecb2346e86",
+            "b72133df2a",
+            "a130456abf",
+            "a891976062",
+            "6468fc52f8"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          }
+        },
+        {
+          "query_id": "Third Party claim indemnity limited to use of products in compliance with agreement",
+          "top_ids": [
+            "a8149da993",
+            "f5b72117b0",
+            "70ef3189ed",
+            "2b786a17c4",
+            "98bcbc4090",
+            "6468fc52f8",
+            "47371f5b5f",
+            "44dbf809a1",
+            "a891976062",
+            "433bb528fe"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.010198708493811178,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "indemnification that covers violation of law",
+          "top_ids": [
+            "349c42d66c",
+            "f5b72117b0",
+            "70ef3189ed",
+            "a891976062",
+            "a8149da993",
+            "f6e6ca32d8",
+            "68971474a5",
+            "6468fc52f8",
+            "47371f5b5f",
+            "ecb2346e86"
+          ],
+          "at_5": {
+            "recall": 0.08333333333333333,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.3391602052736161,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.08333333333333333,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.2483795313844281,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "seller-favorable indemnification clauses",
+          "top_ids": [
+            "e3bcbd0dd0",
+            "e45fa60f05",
+            "433bb528fe",
+            "b72133df2a",
+            "a130456abf",
+            "349c42d66c",
+            "d68f50740e",
+            "b0af77c86f",
+            "7e0917ea6a",
+            "be858d7a31"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.028786759502181337,
+            "judged_fraction": 0.4
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0225688832494804,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "consequential damages waiver",
+          "top_ids": [
+            "9801ca2b34",
+            "83b44a94b3",
+            "e9bb33ad41",
+            "b992ff50d0",
+            "e7eebca907",
+            "486c92ee4f",
+            "6487e69608",
+            "4e0fe69095",
+            "1da2b586cc",
+            "2b639fb90f"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "disclaimer of punitive damages",
+          "top_ids": [
+            "70ef3189ed",
+            "f6e6ca32d8",
+            "68971474a5",
+            "2b786a17c4",
+            "98bcbc4090",
+            "349c42d66c",
+            "a891976062",
+            "a8149da993",
+            "871153bba0",
+            "f88433de6e"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          }
+        },
+        {
+          "query_id": "unilateral indirect damages waiver",
+          "top_ids": [
+            "b992ff50d0",
+            "e7eebca907",
+            "9801ca2b34",
+            "486c92ee4f",
+            "6487e69608",
+            "83b44a94b3",
+            "e9bb33ad41",
+            "1da2b586cc",
+            "ba183a7f7b",
+            "f8045b2002"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          }
+        },
+        {
+          "query_id": "mutual indirect damages waiver",
+          "top_ids": [
+            "e7eebca907",
+            "9801ca2b34",
+            "b992ff50d0",
+            "486c92ee4f",
+            "6487e69608",
+            "83b44a94b3",
+            "e9bb33ad41",
+            "1da2b586cc",
+            "2b786a17c4",
+            "98bcbc4090"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "indirect damage waiver is subject to law",
+          "top_ids": [
+            "f5b72117b0",
+            "2b786a17c4",
+            "98bcbc4090",
+            "be5b4036fb",
+            "871153bba0",
+            "f88433de6e",
+            "2b373eb6f9",
+            "49f7b5c960",
+            "6468fc52f8",
+            "47371f5b5f"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "IP infringement exception to indirect damage waiver",
+          "top_ids": [
+            "f5b72117b0",
+            "2b786a17c4",
+            "98bcbc4090",
+            "be5b4036fb",
+            "4ea8455741",
+            "360c6e8d3e",
+            "17ba801201",
+            "f6e6ca32d8",
+            "871153bba0",
+            "f88433de6e"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "third party IP infringement exception to indirect damage waiver",
+          "top_ids": [
+            "a8149da993",
+            "44dbf809a1",
+            "2b786a17c4",
+            "98bcbc4090",
+            "a891976062",
+            "6468fc52f8",
+            "47371f5b5f",
+            "4ea8455741",
+            "360c6e8d3e",
+            "17ba801201"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          }
+        },
+        {
+          "query_id": "indirect damage waiver clauses that exclude third party IP infringement and fraud, gross negligence or willful misconduct",
+          "top_ids": [
+            "a8149da993",
+            "a891976062",
+            "871153bba0",
+            "f88433de6e",
+            "2b373eb6f9",
+            "49f7b5c960",
+            "4ea8455741",
+            "360c6e8d3e",
+            "17ba801201",
+            "f6e6ca32d8"
+          ],
+          "at_5": {
+            "recall": 0.2,
+            "hit_rate": 1.0,
+            "mrr": 0.25,
+            "ndcg": 0.2123893631750503,
+            "judged_fraction": 0.2
+          },
+          "at_10": {
+            "recall": 0.2,
+            "hit_rate": 1.0,
+            "mrr": 0.25,
+            "ndcg": 0.2018062635054002,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "fraud, gross negligence or willful misconduct carveout to indirect damage waiver",
+          "top_ids": [
+            "be5b4036fb",
+            "871153bba0",
+            "f88433de6e",
+            "2b373eb6f9",
+            "49f7b5c960",
+            "f5b72117b0",
+            "a891976062",
+            "c9c0423ff1",
+            "2b786a17c4",
+            "98bcbc4090"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        },
+        {
+          "query_id": "buyer-favorable waiver of indirect damages clauses",
+          "top_ids": [
+            "70ef3189ed",
+            "68971474a5",
+            "f6e6ca32d8",
+            "349c42d66c",
+            "2b786a17c4",
+            "98bcbc4090",
+            "a8149da993",
+            "a891976062",
+            "1214845ad4",
+            "4ea8455741"
+          ],
+          "at_5": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.0
+          },
+          "at_10": {
+            "recall": 0.0,
+            "hit_rate": 0.0,
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "judged_fraction": 0.1
+          }
+        }
+      ]
+    }
+  },
+  "source_revision": "archive_sha256:c9e851456a14aed161033b856e9f40f3cc9f46cf7282c2007b143420e93a65c3",
+  "evaluated_at_utc": "2026-10-12T09:52:06.684370+00:00",
+  "embedding_provider": null,
+  "embedding_device": null,
+  "unjudged_policy": "qrels ???????? 0 ????judged_fraction ????"
+}

@@ -1,0 +1,2307 @@
+{
+  "dataset": "zh_contract_smoke_v1",
+  "dataset_sha256": "9b64ff18b1a02918386d746d53aaa9f3b074864c78e65724c4cb238dfe3fb156",
+  "synthetic": true,
+  "scope": "自编条款级内存冒烟测试；非真实合同、非端到端质量评测",
+  "corpus_count": 32,
+  "query_count": 24,
+  "embedding_provider": "sentence_transformers",
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "embedding_device": "cpu",
+  "index_embedding_seconds": 2.5578206004574895,
+  "relevance_policy": "每个查询人工指定 relevant_ids；其余语料均为 0 分",
+  "modes": {
+    "lexical": {
+      "summary": {
+        "query_count": 24,
+        "recall_at_5": 0.9791666666666666,
+        "recall_at_10": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr_at_10": 0.9791666666666666,
+        "ndcg_at_10": 0.9681016439350176,
+        "judged_fraction_at_10": 1.0,
+        "empty_results": 0,
+        "latency_ms_p50": 0.38870004937052727,
+        "latency_ms_p95": 0.5082500632852316
+      },
+      "per_query": [
+        {
+          "query_id": "q_pay_01",
+          "relevant_ids": [
+            "pay_01",
+            "pay_02"
+          ],
+          "top_ids": [
+            "pay_02",
+            "accept_01",
+            "pay_01",
+            "accept_02",
+            "accept_03",
+            "accept_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.9197207891481876,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.9197207891481876,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_pay_02",
+          "relevant_ids": [
+            "pay_03"
+          ],
+          "top_ids": [
+            "pay_03",
+            "pay_01",
+            "pay_02",
+            "renew_01",
+            "accept_04",
+            "liability_02",
+            "dispute_03",
+            "terminate_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_01",
+          "relevant_ids": [
+            "term_01"
+          ],
+          "top_ids": [
+            "term_01",
+            "term_02",
+            "term_03",
+            "renew_03",
+            "conf_01",
+            "pay_03",
+            "term_04",
+            "renew_01",
+            "liability_01",
+            "dispute_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_02",
+          "relevant_ids": [
+            "term_03"
+          ],
+          "top_ids": [
+            "term_03",
+            "term_01",
+            "pay_03",
+            "term_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_01",
+          "relevant_ids": [
+            "renew_01",
+            "renew_04"
+          ],
+          "top_ids": [
+            "renew_01",
+            "renew_04",
+            "renew_03",
+            "renew_02",
+            "liability_01",
+            "conf_01",
+            "terminate_01",
+            "terminate_02",
+            "pay_03",
+            "term_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_02",
+          "relevant_ids": [
+            "renew_02"
+          ],
+          "top_ids": [
+            "renew_02",
+            "renew_01",
+            "terminate_03",
+            "pay_01",
+            "pay_04",
+            "term_01",
+            "term_02",
+            "term_03",
+            "renew_03",
+            "accept_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_01",
+          "relevant_ids": [
+            "accept_02"
+          ],
+          "top_ids": [
+            "accept_02",
+            "pay_02",
+            "accept_01",
+            "pay_01",
+            "renew_01",
+            "renew_02",
+            "renew_04",
+            "accept_03",
+            "accept_04",
+            "liability_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_02",
+          "relevant_ids": [
+            "accept_03"
+          ],
+          "top_ids": [
+            "accept_03",
+            "accept_01",
+            "accept_04",
+            "pay_01",
+            "pay_02",
+            "accept_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_01",
+          "relevant_ids": [
+            "liability_02"
+          ],
+          "top_ids": [
+            "liability_02",
+            "liability_01",
+            "pay_02",
+            "term_04",
+            "renew_04",
+            "liability_03",
+            "liability_04",
+            "pay_01",
+            "pay_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_02",
+          "relevant_ids": [
+            "liability_03"
+          ],
+          "top_ids": [
+            "liability_03",
+            "liability_02",
+            "pay_04",
+            "term_01",
+            "renew_02",
+            "renew_03",
+            "accept_04",
+            "liability_01",
+            "liability_04",
+            "dispute_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_01",
+          "relevant_ids": [
+            "conf_02"
+          ],
+          "top_ids": [
+            "conf_02",
+            "conf_01",
+            "conf_04",
+            "liability_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_02",
+          "relevant_ids": [
+            "conf_03"
+          ],
+          "top_ids": [
+            "conf_03",
+            "conf_01",
+            "renew_03",
+            "renew_01",
+            "liability_01",
+            "terminate_02",
+            "pay_03",
+            "term_01",
+            "renew_04",
+            "dispute_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_01",
+          "relevant_ids": [
+            "dispute_01"
+          ],
+          "top_ids": [
+            "dispute_01",
+            "dispute_03",
+            "dispute_04",
+            "liability_02",
+            "terminate_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_02",
+          "relevant_ids": [
+            "dispute_02"
+          ],
+          "top_ids": [
+            "dispute_02",
+            "dispute_01",
+            "dispute_03",
+            "dispute_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_01",
+          "relevant_ids": [
+            "terminate_01"
+          ],
+          "top_ids": [
+            "terminate_01",
+            "liability_01",
+            "renew_01",
+            "terminate_03",
+            "pay_03",
+            "renew_03",
+            "conf_01",
+            "pay_01",
+            "pay_02",
+            "term_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_02",
+          "relevant_ids": [
+            "terminate_02"
+          ],
+          "top_ids": [
+            "terminate_02",
+            "renew_03",
+            "conf_01",
+            "pay_01",
+            "pay_04",
+            "renew_01",
+            "renew_04",
+            "liability_01",
+            "terminate_01",
+            "terminate_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_pay_03",
+          "relevant_ids": [
+            "pay_03"
+          ],
+          "top_ids": [
+            "pay_03",
+            "pay_04",
+            "term_04",
+            "terminate_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_03",
+          "relevant_ids": [
+            "term_04"
+          ],
+          "top_ids": [
+            "term_04",
+            "pay_02",
+            "term_02",
+            "renew_04",
+            "liability_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_03",
+          "relevant_ids": [
+            "renew_01",
+            "renew_04"
+          ],
+          "top_ids": [
+            "renew_04",
+            "accept_02",
+            "pay_02",
+            "term_04",
+            "liability_03",
+            "pay_04",
+            "term_01",
+            "renew_01",
+            "renew_02",
+            "renew_03"
+          ],
+          "at_5": {
+            "recall": 0.5,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.6131471927654584,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.8065735963827292,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_03",
+          "relevant_ids": [
+            "accept_02"
+          ],
+          "top_ids": [
+            "pay_02",
+            "accept_02",
+            "pay_03",
+            "renew_02",
+            "renew_04",
+            "accept_01",
+            "liability_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714574,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714574,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_03",
+          "relevant_ids": [
+            "liability_01",
+            "liability_04"
+          ],
+          "top_ids": [
+            "liability_01",
+            "liability_02",
+            "liability_03",
+            "liability_04",
+            "conf_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.8772153153380493,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.8772153153380493,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_03",
+          "relevant_ids": [
+            "conf_02"
+          ],
+          "top_ids": [
+            "conf_02",
+            "conf_03",
+            "accept_01",
+            "dispute_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_03",
+          "relevant_ids": [
+            "dispute_02"
+          ],
+          "top_ids": [
+            "dispute_02",
+            "liability_02",
+            "dispute_01",
+            "terminate_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_03",
+          "relevant_ids": [
+            "terminate_02"
+          ],
+          "top_ids": [
+            "terminate_02",
+            "accept_01",
+            "terminate_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        }
+      ]
+    },
+    "vector": {
+      "summary": {
+        "query_count": 24,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr_at_10": 0.9097222222222222,
+        "ndcg_at_10": 0.9394132835812992,
+        "judged_fraction_at_10": 1.0,
+        "empty_results": 0,
+        "latency_ms_p50": 21.470400039106607,
+        "latency_ms_p95": 24.62945468723774
+      },
+      "per_query": [
+        {
+          "query_id": "q_pay_01",
+          "relevant_ids": [
+            "pay_01",
+            "pay_02"
+          ],
+          "top_ids": [
+            "accept_01",
+            "pay_01",
+            "pay_02",
+            "accept_02",
+            "pay_03",
+            "pay_04",
+            "term_03",
+            "term_01",
+            "renew_04",
+            "term_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6934264036172708,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6934264036172708,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_pay_02",
+          "relevant_ids": [
+            "pay_03"
+          ],
+          "top_ids": [
+            "pay_03",
+            "pay_01",
+            "terminate_02",
+            "pay_04",
+            "accept_01",
+            "renew_02",
+            "liability_02",
+            "dispute_03",
+            "term_03",
+            "pay_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_01",
+          "relevant_ids": [
+            "term_01"
+          ],
+          "top_ids": [
+            "term_01",
+            "term_03",
+            "renew_03",
+            "term_02",
+            "renew_01",
+            "renew_02",
+            "pay_03",
+            "pay_04",
+            "terminate_01",
+            "term_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_02",
+          "relevant_ids": [
+            "term_03"
+          ],
+          "top_ids": [
+            "term_03",
+            "term_01",
+            "term_02",
+            "renew_02",
+            "pay_01",
+            "accept_02",
+            "renew_01",
+            "renew_03",
+            "terminate_02",
+            "pay_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_01",
+          "relevant_ids": [
+            "renew_01",
+            "renew_04"
+          ],
+          "top_ids": [
+            "renew_01",
+            "renew_04",
+            "renew_03",
+            "renew_02",
+            "terminate_01",
+            "terminate_04",
+            "terminate_02",
+            "term_01",
+            "accept_02",
+            "term_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_02",
+          "relevant_ids": [
+            "renew_02"
+          ],
+          "top_ids": [
+            "renew_02",
+            "renew_01",
+            "renew_03",
+            "terminate_02",
+            "terminate_01",
+            "dispute_01",
+            "terminate_03",
+            "term_03",
+            "term_01",
+            "liability_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_01",
+          "relevant_ids": [
+            "accept_02"
+          ],
+          "top_ids": [
+            "accept_02",
+            "terminate_02",
+            "renew_04",
+            "accept_01",
+            "renew_01",
+            "pay_01",
+            "pay_02",
+            "terminate_04",
+            "accept_03",
+            "accept_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_02",
+          "relevant_ids": [
+            "accept_03"
+          ],
+          "top_ids": [
+            "accept_03",
+            "accept_04",
+            "accept_01",
+            "accept_02",
+            "pay_02",
+            "pay_01",
+            "terminate_02",
+            "term_03",
+            "liability_02",
+            "pay_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_01",
+          "relevant_ids": [
+            "liability_02"
+          ],
+          "top_ids": [
+            "liability_02",
+            "liability_01",
+            "term_04",
+            "pay_02",
+            "liability_04",
+            "renew_04",
+            "liability_03",
+            "pay_04",
+            "terminate_01",
+            "terminate_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_02",
+          "relevant_ids": [
+            "liability_03"
+          ],
+          "top_ids": [
+            "liability_03",
+            "liability_01",
+            "liability_02",
+            "terminate_03",
+            "terminate_01",
+            "dispute_01",
+            "terminate_02",
+            "renew_03",
+            "pay_04",
+            "conf_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_01",
+          "relevant_ids": [
+            "conf_02"
+          ],
+          "top_ids": [
+            "conf_02",
+            "conf_04",
+            "conf_01",
+            "liability_03",
+            "conf_03",
+            "terminate_04",
+            "terminate_01",
+            "renew_01",
+            "terminate_02",
+            "dispute_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_02",
+          "relevant_ids": [
+            "conf_03"
+          ],
+          "top_ids": [
+            "conf_03",
+            "conf_01",
+            "renew_03",
+            "conf_04",
+            "conf_02",
+            "terminate_01",
+            "renew_02",
+            "liability_03",
+            "renew_01",
+            "terminate_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_01",
+          "relevant_ids": [
+            "dispute_01"
+          ],
+          "top_ids": [
+            "dispute_01",
+            "dispute_03",
+            "dispute_04",
+            "renew_02",
+            "dispute_02",
+            "terminate_02",
+            "terminate_01",
+            "renew_01",
+            "liability_02",
+            "liability_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_02",
+          "relevant_ids": [
+            "dispute_02"
+          ],
+          "top_ids": [
+            "dispute_02",
+            "dispute_03",
+            "dispute_01",
+            "dispute_04",
+            "terminate_02",
+            "terminate_01",
+            "accept_02",
+            "liability_02",
+            "renew_02",
+            "liability_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_01",
+          "relevant_ids": [
+            "terminate_01"
+          ],
+          "top_ids": [
+            "terminate_01",
+            "terminate_03",
+            "terminate_04",
+            "liability_01",
+            "renew_01",
+            "renew_03",
+            "terminate_02",
+            "term_01",
+            "renew_02",
+            "liability_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_02",
+          "relevant_ids": [
+            "terminate_02"
+          ],
+          "top_ids": [
+            "terminate_02",
+            "renew_01",
+            "terminate_01",
+            "terminate_04",
+            "renew_03",
+            "renew_04",
+            "pay_01",
+            "accept_02",
+            "pay_04",
+            "term_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_pay_03",
+          "relevant_ids": [
+            "pay_03"
+          ],
+          "top_ids": [
+            "pay_03",
+            "accept_01",
+            "terminate_03",
+            "pay_04",
+            "term_04",
+            "pay_01",
+            "pay_02",
+            "terminate_02",
+            "accept_02",
+            "liability_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_03",
+          "relevant_ids": [
+            "term_04"
+          ],
+          "top_ids": [
+            "term_04",
+            "pay_02",
+            "pay_03",
+            "renew_04",
+            "accept_01",
+            "terminate_02",
+            "accept_02",
+            "term_03",
+            "pay_01",
+            "accept_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_03",
+          "relevant_ids": [
+            "renew_01",
+            "renew_04"
+          ],
+          "top_ids": [
+            "renew_02",
+            "renew_01",
+            "accept_02",
+            "renew_04",
+            "terminate_04",
+            "renew_03",
+            "conf_03",
+            "dispute_03",
+            "terminate_02",
+            "term_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6509209298071326,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6509209298071326,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_03",
+          "relevant_ids": [
+            "accept_02"
+          ],
+          "top_ids": [
+            "pay_02",
+            "accept_02",
+            "liability_02",
+            "renew_02",
+            "pay_03",
+            "renew_04",
+            "conf_01",
+            "conf_03",
+            "conf_02",
+            "terminate_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714574,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714574,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_03",
+          "relevant_ids": [
+            "liability_01",
+            "liability_04"
+          ],
+          "top_ids": [
+            "liability_03",
+            "terminate_01",
+            "liability_04",
+            "liability_01",
+            "terminate_04",
+            "conf_03",
+            "conf_02",
+            "liability_02",
+            "accept_02",
+            "terminate_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.3333333333333333,
+            "ndcg": 0.5706417189553201,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.3333333333333333,
+            "ndcg": 0.5706417189553201,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_03",
+          "relevant_ids": [
+            "conf_02"
+          ],
+          "top_ids": [
+            "conf_02",
+            "conf_04",
+            "conf_01",
+            "terminate_03",
+            "terminate_02",
+            "conf_03",
+            "terminate_04",
+            "liability_03",
+            "accept_02",
+            "renew_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_03",
+          "relevant_ids": [
+            "dispute_02"
+          ],
+          "top_ids": [
+            "dispute_02",
+            "dispute_03",
+            "terminate_01",
+            "dispute_01",
+            "terminate_02",
+            "liability_02",
+            "terminate_03",
+            "accept_02",
+            "conf_04",
+            "pay_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_03",
+          "relevant_ids": [
+            "terminate_02"
+          ],
+          "top_ids": [
+            "terminate_02",
+            "terminate_03",
+            "renew_01",
+            "terminate_01",
+            "accept_02",
+            "pay_04",
+            "accept_01",
+            "renew_03",
+            "dispute_01",
+            "renew_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        }
+      ]
+    },
+    "hybrid": {
+      "summary": {
+        "query_count": 24,
+        "recall_at_5": 1.0,
+        "recall_at_10": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr_at_10": 0.9375,
+        "ndcg_at_10": 0.9539582448393353,
+        "judged_fraction_at_10": 1.0,
+        "empty_results": 0,
+        "latency_ms_p50": 21.930200047791004,
+        "latency_ms_p95": 25.02952474169433
+      },
+      "per_query": [
+        {
+          "query_id": "q_pay_01",
+          "relevant_ids": [
+            "pay_01",
+            "pay_02"
+          ],
+          "top_ids": [
+            "accept_01",
+            "pay_02",
+            "pay_01",
+            "accept_02",
+            "accept_03",
+            "accept_04",
+            "pay_03",
+            "pay_04",
+            "term_03",
+            "term_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6934264036172708,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6934264036172708,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_pay_02",
+          "relevant_ids": [
+            "pay_03"
+          ],
+          "top_ids": [
+            "pay_03",
+            "pay_01",
+            "terminate_02",
+            "pay_02",
+            "liability_02",
+            "dispute_03",
+            "renew_01",
+            "accept_04",
+            "pay_04",
+            "accept_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_01",
+          "relevant_ids": [
+            "term_01"
+          ],
+          "top_ids": [
+            "term_01",
+            "term_03",
+            "term_02",
+            "renew_03",
+            "renew_01",
+            "pay_03",
+            "conf_01",
+            "term_04",
+            "renew_02",
+            "pay_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_02",
+          "relevant_ids": [
+            "term_03"
+          ],
+          "top_ids": [
+            "term_03",
+            "term_01",
+            "term_02",
+            "pay_03",
+            "renew_02",
+            "pay_01",
+            "accept_02",
+            "renew_01",
+            "renew_03",
+            "terminate_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_01",
+          "relevant_ids": [
+            "renew_01",
+            "renew_04"
+          ],
+          "top_ids": [
+            "renew_01",
+            "renew_04",
+            "renew_03",
+            "renew_02",
+            "terminate_01",
+            "terminate_02",
+            "conf_01",
+            "term_01",
+            "liability_01",
+            "terminate_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_02",
+          "relevant_ids": [
+            "renew_02"
+          ],
+          "top_ids": [
+            "renew_02",
+            "renew_01",
+            "terminate_03",
+            "renew_03",
+            "term_01",
+            "term_03",
+            "dispute_01",
+            "liability_03",
+            "terminate_02",
+            "terminate_01"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_01",
+          "relevant_ids": [
+            "accept_02"
+          ],
+          "top_ids": [
+            "accept_02",
+            "accept_01",
+            "pay_02",
+            "renew_04",
+            "pay_01",
+            "renew_01",
+            "terminate_02",
+            "accept_03",
+            "accept_04",
+            "renew_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_02",
+          "relevant_ids": [
+            "accept_03"
+          ],
+          "top_ids": [
+            "accept_03",
+            "accept_04",
+            "accept_01",
+            "accept_02",
+            "pay_01",
+            "pay_02",
+            "terminate_02",
+            "term_03",
+            "liability_02",
+            "pay_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_01",
+          "relevant_ids": [
+            "liability_02"
+          ],
+          "top_ids": [
+            "liability_02",
+            "liability_01",
+            "term_04",
+            "pay_02",
+            "renew_04",
+            "liability_04",
+            "liability_03",
+            "pay_03",
+            "pay_01",
+            "pay_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_02",
+          "relevant_ids": [
+            "liability_03"
+          ],
+          "top_ids": [
+            "liability_03",
+            "liability_02",
+            "liability_01",
+            "pay_04",
+            "renew_03",
+            "dispute_01",
+            "renew_02",
+            "term_01",
+            "dispute_02",
+            "liability_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_01",
+          "relevant_ids": [
+            "conf_02"
+          ],
+          "top_ids": [
+            "conf_02",
+            "conf_04",
+            "conf_01",
+            "liability_03",
+            "conf_03",
+            "terminate_04",
+            "terminate_01",
+            "renew_01",
+            "terminate_02",
+            "dispute_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_02",
+          "relevant_ids": [
+            "conf_03"
+          ],
+          "top_ids": [
+            "conf_03",
+            "conf_01",
+            "renew_03",
+            "renew_01",
+            "terminate_02",
+            "terminate_01",
+            "term_01",
+            "liability_01",
+            "terminate_04",
+            "renew_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_01",
+          "relevant_ids": [
+            "dispute_01"
+          ],
+          "top_ids": [
+            "dispute_01",
+            "dispute_03",
+            "dispute_04",
+            "terminate_01",
+            "liability_02",
+            "renew_02",
+            "dispute_02",
+            "terminate_02",
+            "renew_01",
+            "liability_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_02",
+          "relevant_ids": [
+            "dispute_02"
+          ],
+          "top_ids": [
+            "dispute_02",
+            "dispute_03",
+            "dispute_01",
+            "dispute_04",
+            "terminate_02",
+            "terminate_01",
+            "accept_02",
+            "liability_02",
+            "renew_02",
+            "liability_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_01",
+          "relevant_ids": [
+            "terminate_01"
+          ],
+          "top_ids": [
+            "terminate_01",
+            "terminate_03",
+            "liability_01",
+            "renew_01",
+            "renew_03",
+            "term_01",
+            "renew_02",
+            "terminate_04",
+            "liability_03",
+            "terminate_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_02",
+          "relevant_ids": [
+            "terminate_02"
+          ],
+          "top_ids": [
+            "terminate_02",
+            "renew_03",
+            "renew_01",
+            "pay_01",
+            "terminate_01",
+            "renew_04",
+            "pay_04",
+            "terminate_04",
+            "term_01",
+            "terminate_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_pay_03",
+          "relevant_ids": [
+            "pay_03"
+          ],
+          "top_ids": [
+            "pay_03",
+            "pay_04",
+            "term_04",
+            "terminate_04",
+            "accept_01",
+            "terminate_03",
+            "pay_01",
+            "pay_02",
+            "terminate_02",
+            "accept_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_term_03",
+          "relevant_ids": [
+            "term_04"
+          ],
+          "top_ids": [
+            "term_04",
+            "pay_02",
+            "renew_04",
+            "term_02",
+            "liability_02",
+            "pay_03",
+            "accept_01",
+            "terminate_02",
+            "accept_02",
+            "term_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_renew_03",
+          "relevant_ids": [
+            "renew_01",
+            "renew_04"
+          ],
+          "top_ids": [
+            "renew_04",
+            "accept_02",
+            "renew_02",
+            "renew_01",
+            "renew_03",
+            "liability_03",
+            "terminate_04",
+            "term_01",
+            "pay_02",
+            "dispute_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.8772153153380493,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 0.8772153153380493,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_accept_03",
+          "relevant_ids": [
+            "accept_02"
+          ],
+          "top_ids": [
+            "pay_02",
+            "accept_02",
+            "pay_03",
+            "renew_02",
+            "liability_02",
+            "renew_04",
+            "accept_01",
+            "conf_01",
+            "conf_03",
+            "conf_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714574,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714574,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_liability_03",
+          "relevant_ids": [
+            "liability_01",
+            "liability_04"
+          ],
+          "top_ids": [
+            "liability_03",
+            "liability_01",
+            "liability_04",
+            "liability_02",
+            "conf_03",
+            "terminate_01",
+            "terminate_04",
+            "conf_02",
+            "accept_02",
+            "terminate_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6934264036172708,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6934264036172708,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_conf_03",
+          "relevant_ids": [
+            "conf_02"
+          ],
+          "top_ids": [
+            "conf_02",
+            "conf_03",
+            "accept_01",
+            "dispute_01",
+            "conf_04",
+            "conf_01",
+            "terminate_03",
+            "terminate_02",
+            "terminate_04",
+            "liability_03"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_dispute_03",
+          "relevant_ids": [
+            "dispute_02"
+          ],
+          "top_ids": [
+            "dispute_02",
+            "terminate_01",
+            "dispute_01",
+            "liability_02",
+            "dispute_03",
+            "terminate_02",
+            "terminate_03",
+            "accept_02",
+            "conf_04",
+            "pay_04"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        },
+        {
+          "query_id": "q_terminate_03",
+          "relevant_ids": [
+            "terminate_02"
+          ],
+          "top_ids": [
+            "terminate_02",
+            "terminate_01",
+            "accept_01",
+            "terminate_03",
+            "renew_01",
+            "accept_02",
+            "pay_04",
+            "renew_03",
+            "dispute_01",
+            "renew_02"
+          ],
+          "at_5": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          },
+          "at_10": {
+            "recall": 1.0,
+            "hit_rate": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "judged_fraction": 1.0
+          }
+        }
+      ]
+    }
+  }
+}

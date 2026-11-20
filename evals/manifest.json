@@ -1,0 +1,58 @@
+{
+  "dataset_id": "acord_v1",
+  "display_name": "Atticus Clause Retrieval Dataset (ACORD)",
+  "source_url": "https://huggingface.co/datasets/theatticusproject/acord/resolve/main/ACORD%20Dataset%20%26%20ReadMe.zip",
+  "source_revision": "archive_sha256:c9e851456a14aed161033b856e9f40f3cc9f46cf7282c2007b143420e93a65c3",
+  "downloaded_at": "2026-10-12",
+  "dataset_license": "CC BY 4.0",
+  "license_source": "ACORD readme.docx bundled in the downloaded archive",
+  "raw_root": "evals/raw/acord",
+  "files": [
+    {
+      "path": "ACORD Dataset & ReadMe.zip",
+      "bytes": 3131196,
+      "sha256": "c9e851456a14aed161033b856e9f40f3cc9f46cf7282c2007b143420e93a65c3"
+    },
+    {
+      "path": "ACORD readme.docx",
+      "bytes": 106592,
+      "sha256": "7d2cb392c6170aad0ca18019875a02bf319c230cc6a51c1627faaeab2f4d3e97"
+    },
+    {
+      "path": "corpus.jsonl",
+      "bytes": 4508873,
+      "sha256": "08465be51f76c992c5727fa0790b072017a92704926bbd6a84a1781ddb63b355"
+    },
+    {
+      "path": "qrels/test.tsv",
+      "bytes": 3793128,
+      "sha256": "efb57d9a6301a3379bc3dd4af74419c2033ec86b5c400a8c121762ed7d859bc0"
+    },
+    {
+      "path": "qrels/train.tsv",
+      "bytes": 3885909,
+      "sha256": "088f0e2a573e9761934de971d5acb086be598d2fa50040e706905118e0f10261"
+    },
+    {
+      "path": "qrels/valid.tsv",
+      "bytes": 407391,
+      "sha256": "8e2b7127e457dd27a030f3599bf85a4d858a4f41b6808939d2e705fdd2121e70"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 25482,
+      "sha256": "66821ebde0b5125efa5f554acccdb9153d212d684c62f4c88a6802caf4f413f7"
+    },
+    {
+      "path": "supplemental materials/ACORD 2-5 Star Clause Pairs.xlsx",
+      "bytes": 1531074,
+      "sha256": "0cca17a3ed4d5e81aa9a12913754b8ac013022c82e78e229ec9de2f8c7d22866"
+    },
+    {
+      "path": "supplemental materials/acord query (short_medium_long).tsv",
+      "bytes": 44027,
+      "sha256": "deebb00e66457a58bd1d6e82baafeaffd4e05b0912cc99574860c783e9f0c943"
+    }
+  ],
+  "publisher_url": "https://github.com/The-Atticus-Project/acord"
+}

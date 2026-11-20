@@ -1,0 +1,32 @@
+# Python、Node、环境变量、生成数据与用户上传文档不应提交。
+.venv/
+__pycache__/
+.pytest_cache/
+.pytest-tmp/
+pytest-cache-files-*/
+backend/.agent_test_data/
+backend/.pytest_agent_nodes/
+backend/.pytest_tmp_agent_graph/
+backend/.test-ingestion/
+backend/.tmp*/
+*.egg-info/
+backend/.test-storage/
+evals/tests/.scratch/
+.tmp-python/
+node_modules/
+frontend/dist/
+backend/data/
+.env
+data/uploads/
+data/generated/
+*.db
+*.log
+*.tsbuildinfo
+
+# 公开评测原件和处理产物单独下载或生成，避免误提交大文件。
+evals/raw/acord/**
+!evals/raw/acord/.gitkeep
+evals/raw/zh_procurement/**
+!evals/raw/zh_procurement/.gitkeep
+evals/processed/acord_v1/**
+!evals/processed/acord_v1/.gitkeep
